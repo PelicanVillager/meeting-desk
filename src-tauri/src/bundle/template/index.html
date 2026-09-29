@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>__TITLE__</title>
+<style>/*__CSS__*/</style>
+</head>
+<body>
+<header id="topbar">
+  <span id="meeting-title">会议材料</span>
+  <span id="meeting-date"></span>
+  <span class="badge">🔒 本地</span>
+  <input id="search" type="search" placeholder="搜索材料标题… 按 / 聚焦">
+  <span id="counter"></span>
+  <button id="btn-toc" type="button" title="隐藏左侧目录（T）">目录 ✓</button>
+  <button id="btn-zoom" type="button">字号 100%</button>
+  <button id="btn-present" type="button">投屏增强</button>
+  <button id="btn-rotate" type="button" title="把倒着/横着的材料转正（R）">旋转</button>
+  <button id="btn-notes" type="button">📝 备注</button>
+  <button id="btn-full" type="button">⛶ 全屏（F）</button>
+</header>
+<main>
+  <nav id="toc"></nav>
+  <section id="stage">
+    <div id="viewer"></div>
+    <div id="empty">← 从左侧选择一份材料</div>
+  </section>
+  <aside id="notes" hidden>
+    <h2>我的备注</h2>
+    <p class="hint">会中随时记；会议结束前点“导出全部备注”，把文件带回工作台归档。</p>
+    <textarea id="notes-text" placeholder="针对当前材料记录…"></textarea>
+    <div class="note-actions">
+      <button id="btn-export-notes" type="button">导出全部备注</button>
+      <button id="btn-close-notes" type="button">关闭</button>
+    </div>
+    <div id="notes-status" class="hint"></div>
+  </aside>
+</main>
+<footer id="bottombar">
+  <button id="btn-prev" type="button">← 上一份</button>
+  <span id="progress">0 / 0</span>
+  <button id="btn-next" type="button">下一份 →</button>
+  <span class="sep"></span>
+  <span class="hint">↑ ↓ 翻 PDF 页　← → 换材料　空格 下一份　F 全屏　/ 搜索</span>
+</footer>
+<script>/*__JSZIP__*/</script>
+<script>/*__DOCX_PREVIEW__*/</script>
+<script>window.MEETING_BUNDLE = /*__DATA__*/;</script>
+<script>/*__APP__*/</script>
+</body>
+</html>

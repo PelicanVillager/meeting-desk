@@ -1,0 +1,49 @@
+/*
+ * 设计令牌：克制的办公工具风格。
+ * 不使用渐变、不使用在线字体（系统字体栈）、圆角保持小尺寸。
+ */
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs-base: 14px;
+  --fs-md: 15px;
+  --fs-lg: 18px;
+  --fs-xl: 22px;
+  --fs-2xl: 28px;
+
+  --c-bg: #f5f6f7;
+  --c-surface: #ffffff;
+  --c-surface-2: #fafbfc;
+  --c-border: #e0e3e7;
+  --c-border-strong: #c8ced6;
+  --c-text: #1f2328;
+  --c-text-2: #57606a;
+  --c-text-3: #8b949e;
+
+  --c-accent: #1f5fa8;
+  --c-accent-weak: #eaf1f9;
+  --c-ok: #1a7f45;
+  --c-ok-weak: #e8f5ed;
+  --c-warn: #9a6700;
+  --c-warn-weak: #fdf3e0;
+  --c-danger: #b3261e;
+  --c-danger-weak: #fdecea;
+  --c-local: #17594a;
+  --c-local-weak: #e6f2ee;
+
+  --radius-sm: 3px;
+  --radius-md: 5px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  --shadow-1: 0 1px 2px rgba(16, 24, 40, 0.06);
+}

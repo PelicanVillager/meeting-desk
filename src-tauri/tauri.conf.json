@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "会议材料工作台",
+  "version": "0.1.0",
+  "identifier": "com.alex.meetingdesk",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "会议材料工作台",
+        "width": 1440,
+        "height": 900,
+        "minWidth": 1024,
+        "minHeight": 680,
+        "resizable": true,
+        "dragDropEnabled": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; connect-src 'self' ipc: http://ipc.localhost http://127.0.0.1:* http://localhost:*; img-src 'self' data: blob:; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'",
+      "assetProtocol": {
+        "enable": false
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["app", "dmg"],
+    "category": "Productivity",
+    "shortDescription": "本地会议材料管理与阅读",
+    "longDescription": "完全本地运行的会议材料工作台：拖入会议材料，自动解析、OCR、建立议题与附件关系，支持阅读、搜索、备注与本地 AI 辅助。文件不上传云端。",
+    "resources": ["binaries/meetingdesk-ocr"],
+    "macOS": {
+      "minimumSystemVersion": "12.0"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+# 依赖与构建产物
+node_modules/
+dist/
+dist-bundle/
+src-tauri/target/
+src-tauri/gen/
+src-tauri/binaries/
+src-tauri/icons/android/
+src-tauri/icons/ios/
+
+# 本地数据（绝不能进版本库）
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+data/
+
+# 真实会议材料样例（放在项目根目录用于本地测试；绝不进版本库）
+20260929-党委会会议材料/
+第三季度读书班/
+
+# 系统
+.DS_Store
+*.log
+.vite/

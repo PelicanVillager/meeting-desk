@@ -1,0 +1,35 @@
+{
+  "name": "meeting-desk",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "会议材料工作台 / Meeting Desk —— 完全本地运行的会议材料管理与阅读工具",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "offline-check": "node scripts/offline-check.mjs",
+    "bundle": "node scripts/build-bundle.mjs",
+    "ocr-bridge": "bash scripts/build-ocr-bridge.sh",
+    "tauri": "tauri",
+    "app:dev": "tauri dev",
+    "app:build": "pnpm ocr-bridge && tauri build"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.9.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.9.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "docx-preview": "^0.4.1",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0",
+    "vitest": "^3.2.0"
+  }
+}
